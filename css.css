@@ -1,0 +1,976 @@
+   * {
+     margin: 0;
+     box-sizing: border-box;
+   }
+
+   body {
+     background-color: rgba(255, 228, 196, 0.362);
+     /*justify-content: center;
+     margin: 0;
+     justify-items: center;
+     display: flex;*/
+   }
+
+   .contianer1 {
+     display: grid;
+     grid-template-areas:
+       "topbav"
+       "2bav"
+       "3bav"
+       "4bav"
+       "5bav"
+       "6bav";
+   }
+
+   @media (max-width:600px) and (min-width:100px) {
+    .body{
+      width: 100%;
+    }
+     .contianer1 {
+      width: 100%;
+       height: fit-content;
+       grid-template-areas:
+         "topbav"
+         "2bav"
+         "3bav";
+     }
+
+
+   }
+
+   .definepage {
+     width: 100%;
+     padding: 10px;
+   }
+
+   .item1 {
+     background-color: rgba(253, 162, 162, 0.768);
+     grid-area: topbav;
+     padding: 7px;
+     border-bottom: 2px solid black;
+     height: 40px;
+     padding: 0 10px;
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+   /*item1*/
+   .item1 a {
+     text-decoration: none;
+     color: black;
+     display: flex;
+     justify-content: space-around;
+     margin-inline-start: 50px;
+     margin-top: 10px;
+
+   }
+
+   /*item2*/
+
+   .item2 {
+     grid-area: 2bav;
+     background-color: rgba(245, 223, 80, 0.471);
+     border-bottom: 2px solid rgb(240, 231, 231);
+     height: auto;
+     width: 100%;
+   }
+
+   /* Updated styles for .detail and its <a> tags */
+   .detail {
+     display: flex;
+     /* Use flexbox for better control */
+     align-items: center;
+     /* Vertically center the items */
+     justify-content: flex-start;
+     /* Align items to the start */
+     background-color: rgba(255, 241, 150, 0.471);
+     /* Match the background from your image */
+     padding: 1px;
+     /* Add some padding for spacing */
+   }
+
+   .detail a {
+     color: black;
+     text-decoration: none;
+     padding: 12px;
+     background-color: rgb(165, 162, 162);
+     /* Consistent background */
+     border: 1px solid rgba(0, 0, 0, 0.362);
+     border-radius: 2px;
+     display: inline-block;
+     /* Ensure inline-block for spacing */
+     margin-right: 0px;
+     /* Add space between links */
+   }
+
+   .detail button {
+     border: 1px solid rgb(0, 0, 0);
+     background-color: aqua;
+     cursor: pointer;
+     padding: 11px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 17px;
+     margin-left: auto;
+   }
+
+   .item3 {
+     grid-area: 3bav;
+     width: 100%;
+     height: 140px;
+     background-color: rgb(160, 246, 217);
+     flex-wrap: wrap;
+     display: grid;
+     border: 3px solid white;
+   }
+
+   /*item4*/
+
+   .ground1 {
+     display: flex;
+   }
+
+   .ground1 button {
+     background-color: rgb(136, 255, 136);
+     border-color: rgb(0, 0, 0);
+     width: 100px;
+     height: 50px;
+   }
+
+   .customertype {
+     color: rgb(0, 60, 255);
+   }
+
+   .customertype p {
+     padding: 2px;
+
+   }
+
+   .memberpoint {
+     display: flex;
+     border: none;
+   }
+
+   .normallct {
+     border: 1px solid rgb(255, 255, 255);
+     box-shadow: 0px 1px 1px 0px rgb(255, 255, 255);
+     width: 192.5px;
+     padding-right: 10px;
+   }
+
+   .member {
+     border: 1px solid black;
+     color: black;
+     text-align: center;
+   }
+
+   .invoice {
+     margin-left: 2px;
+   }
+
+   .invoice input {
+     border: none;
+     padding: 6px;
+   }
+
+   #clock {
+     font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+     color: #000000;
+     background-color: azure;
+     width: 200px;
+     height: 27px;
+     margin-top: 0px;
+     border: 1px solid black;
+     margin-left: 2px;
+     text-align: center;
+   }
+
+   #informationcompany {
+     border: 1px solid rgb(255, 0, 0);
+     width: 700px;
+     margin-left: 20px;
+     padding: 4px;
+     font-size: 16px;
+     font-family: 'Times New Roman', Times, serif;
+     background-color: rgb(242, 233, 233);
+   }
+
+   .blockcompany label {
+     font-size: 14px;
+     margin-left: 30px;
+   }
+
+   .informationcompany option {
+     background-color: rgb(255, 255, 255);
+   }
+
+   .ground2 {
+     margin-top: 0px;
+     display: flex;
+   }
+
+   #select2 {
+     grid: seclect1;
+     padding-right: 50px;
+     background-color: rgba(249, 241, 241, 0.795);
+     padding-block: 7px;
+     border: 1px solid rgb(0, 0, 0);
+     border-radius: 4px;
+   }
+
+   #select2 option {
+     background-color: white;
+   }
+
+   .select3 {
+     grid: select3;
+     padding-left: 80px;
+     padding-block: 7px;
+     margin-top: 3px;
+     border: 1px solid rgb(0, 0, 0);
+     border-radius: 4px;
+
+   }
+
+   .textcredit input {
+     grid: textinput1;
+     padding: 7px;
+     margin-top: 2px;
+     border-radius: 2px;
+     width: 100px;
+
+   }
+
+   .select4 {
+     grid: select4;
+     padding-right: 80px;
+     padding-block: 7px;
+     margin-top: 2px;
+     border-radius: 3px;
+     background-color: rgba(202, 201, 201, 0.715);
+     border: 2px solid rgb(255, 241, 241);
+
+   }
+
+   .select4 option {
+     background-color: white;
+   }
+
+   .potype {}
+
+   .inputPO input {
+     padding: 7px;
+     border: 2px solid rgb(109, 109, 109);
+   }
+
+   .commentinput input {
+     width: 450px;
+     padding-block: 7px;
+     border: 2px solid rgb(0, 0, 0);
+   }
+
+   @media (max-width:600px) and (min-width:100px) {
+     .commentinput input {
+       width: 100px;
+
+     }
+   }
+
+   .idtext input {
+     padding: 7px;
+     margin-top: 3px;
+     background-color: rgba(155, 237, 239, 0.493);
+     border: 2px solid black;
+     color: rgb(0, 0, 0);
+     font-family: 'Times New Roman', Times, serif
+   }
+
+   .doctext input {
+     width: 160px;
+     padding: 7px;
+     margin-top: 3px;
+     background-color: rgba(155, 237, 239, 0.493);
+     border: 2px solid black;
+     font-family: 'Times New Roman', Times, serif
+   }
+
+   .item4 {
+     grid-area: 4bav;
+     display: flex;
+   }
+
+   .groud {
+     display: flex;
+     flex-direction: row;
+   }
+
+   .groud p {
+     -webkit-text-stroke-width: 0.7px;
+     margin-top: 10px;
+   }
+
+   .groud input {
+     background-color: rgba(237, 255, 117, 0.785);
+     font-family: 'Times New Roman', Times, serif;
+   }
+
+   .groud button {
+     border: 3px solid white;
+     padding: 2px;
+     background-color: rgb(175, 151, 143);
+
+   }
+
+   .groud label {
+     font-size: 13px;
+     color: #000000;
+     padding-right: 10px;
+     display: flex;
+     margin-top: 20px;
+     -webkit-text-stroke-width: 0.2px;
+     font-family: 'Times New Roman', Times, serif;
+   }
+
+   .groud2 input {
+     padding: 7px;
+     width: 100px;
+     border: 2px solid rgb(71, 175, 255);
+   }
+
+   .groud2 button {
+     background-color: rgb(175, 151, 143);
+     padding: 7px;
+     border: 3px solid white;
+
+   }
+
+   .item5 {
+     width: 100%;
+     background-color: white;
+     height: 170px;
+     border: 1px solid black;
+     grid-area: 5bav;
+   }
+
+   .listproduct {
+     margin-left: auto;
+     display: flex;
+   }
+
+   .listproduct label {
+     font-size: 15px;
+     -webkit-text-stroke-width: 0.3px;
+     margin-top: 18px;
+   }
+
+   .all-btn {
+     width: 57.5%;
+     height: 30px;
+     display: flex;
+   }
+
+   .all-btn button {
+     height: 100%;
+     width: auto;
+     background-color: rgba(80, 188, 215, 0.619);
+     border: 1.5px solid rgb(137, 132, 132);
+     cursor: pointer;
+   }
+
+   .define-3lastgroud {
+     width: 100%;
+     height: 272px;
+     grid-area: 6bav;
+   }
+
+   .setting {
+     height: 60px;
+     width: 68%;
+     grid-area: first;
+   }
+
+   .setting-contianer {
+     border: 1px solid black;
+     width: 100%;
+   }
+
+   .first-groub {
+     width: 100%;
+     height: 50%;
+     display: flex;
+   }
+
+   .addclass button {
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 14px;
+     padding: 3px;
+     background-color: rgba(72, 184, 236, 0.485);
+     border: 2px solid rgb(144, 144, 144);
+
+   }
+
+   .deleteclass {
+     margin-left: 100px;
+   }
+
+   .deleteclass button {
+     padding: 4px;
+     font-size: 14px;
+     background-color: rgba(72, 184, 236, 0.485);
+     border: 2px solid rgb(144, 144, 144);
+   }
+
+   .deleteclass input {
+     padding: 4.5px;
+     text-align: end;
+     color: #000000;
+     background-color: rgba(255, 241, 172, 0.508);
+     border: 1px solid gray;
+
+
+   }
+
+   .symol {
+     margin-left: auto;
+   }
+
+   .symol button {
+     padding: 4.5px;
+     width: 35px;
+     margin-left: 3px;
+     border: 2px solid rgb(140, 141, 138);
+     border-radius: 2px;
+   }
+
+   .second-groub {
+     border: none;
+   }
+
+   .btninelement {
+     height: 100%;
+   }
+
+   .btninelement button {
+     padding: 5px;
+     margin: 0;
+     padding-right: 20px;
+     text-align: center;
+     padding-left: 20px;
+     font-family: 'Times New Roman', Times, serif;
+     background-color: rgba(72, 184, 236, 0.485);
+     border: 2px solid rgb(144, 144, 144);
+   }
+
+   .btninelement input {
+     padding: 5px;
+     width: 606px
+   }
+
+   .priecenumber {
+     border: 1px solid black;
+     width: 68%;
+     grid-area: second;
+   }
+
+   #price-product {
+     border: 1px solid rgb(255, 255, 255);
+     margin-top: 20px;
+     width: 100%;
+     height: 180px;
+     background-color: rgba(234, 147, 250, 0.404);
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     font-size: 5rem;
+     box-shadow: 1px 1px 7px 1px black;
+   }
+
+   .last-price {
+     border: 1px solid rgb(0, 8, 255);
+     width: 485px;
+     margin-left: auto;
+     margin-top: -262px;
+     height: 272px;
+     grid-area: third;
+   }
+
+   .display-lastprice {
+     display: flex;
+     flex-direction: column;
+   }
+
+   .element-row1 {
+     margin-left: 5px;
+
+   }
+
+   .element-row1 label {
+     margin-right: 25px;
+   }
+
+   .element-row1 button {
+     background-color: orange;
+     padding: 2px;
+     border: 2px solid gray;
+     font-family: 'Times New Roman', Times, serif;
+   }
+
+   .element-row1 input {
+     padding: 2px;
+     width: 100px;
+     border: 2px solid gray;
+     font-size: 16px;
+     background-color: rgba(127, 214, 185, 0.744);
+     text-align: right;
+   }
+
+   .element-row1 span {
+     border: 1px solid gray;
+     padding: 2px;
+     font-size: 17px;
+     padding-inline-start: 129px;
+     border-radius: 2px;
+     box-shadow: 0px 0.4px 1px 0px black;
+     float: right;
+   }
+
+   .element-row2 {
+     margin-left: 5px;
+   }
+
+   .element-row2 button {
+     margin-left: 53px;
+     background-color: orange;
+     padding: 2px;
+     border: 2px solid gray;
+     font-family: 'Times New Roman', Times, serif;
+   }
+
+   .element-row2 span {
+     border: 1px solid gray;
+     padding: 2px;
+     font-size: 17px;
+     padding-inline-start: 129px;
+     border-radius: 2px;
+     box-shadow: 0px 0.4px 1px 0px black;
+     float: right;
+   }
+
+   .element-row3 {
+     margin-left: 58px;
+   }
+
+   .element-row3 label {
+     margin-right: 149px;
+     -webkit-text-stroke-width: 0.3px;
+     font-family: 'Times New Roman', Times, serif;
+   }
+
+   .element-row3 span {
+     border: 1px solid gray;
+     padding: 2px;
+     font-size: 17px;
+     padding-inline-start: 129px;
+     border-radius: 2px;
+     box-shadow: 0px 0.4px 1px 0px black;
+     float: right;
+   }
+
+   .element-row4 {
+     margin-top: 3px;
+     margin-left: 5px;
+   }
+
+   .element-row4 button {
+     background-color: rgba(249, 38, 228, 0.582);
+     margin-left: 24px;
+     padding: 2px;
+     font-family: 'Times New Roman', Times, serif;
+     padding-inline-end: 68px;
+     margin-right: 60px;
+   }
+
+   .element-row4 span {
+     border: 1px solid gray;
+     padding: 2px;
+     font-size: 17px;
+     padding-inline-start: 129px;
+     border-radius: 2px;
+     box-shadow: 0px 0.4px 1px 0px black;
+     float: right;
+   }
+
+   .element-row5 {
+     border: 0px solid;
+     margin-left: 6px;
+   }
+
+   .element-row5 button {
+     margin-left: 35px;
+     padding: 2px;
+     padding-inline-end: 25px;
+     background-color: rgba(249, 38, 228, 0.582);
+   }
+
+   .element-row5 label {
+     text-align: end;
+
+   }
+
+   .label-special {
+     padding: 2px;
+     border: 0px solid blue;
+     padding-inline-start: 23px;
+     margin-right: 61px;
+   }
+
+   .element-row5 span {
+     border: 1px solid gray;
+     padding: 2px;
+     font-size: 17px;
+     padding-inline-start: 129px;
+     border-radius: 2px;
+     box-shadow: 0px 0.4px 1px 0px black;
+     float: right;
+   }
+
+   .element-row6 {
+     margin-left: 6px;
+   }
+
+   .element-row6 button {
+     padding: 2px;
+     margin-left: 34px;
+     background-color: rgba(249, 38, 228, 0.582);
+     padding-inline-end: 77px;
+
+   }
+
+   .element-row6 span {
+     margin-left: 59px;
+     padding: 2px;
+     font-size: 17px;
+     padding-inline-start: 129px;
+     float: right;
+   }
+
+   .element-row7 {
+     margin-left: 6px;
+   }
+
+   .element-row7 label {
+     margin-left: 30px;
+     margin-right: 141px
+   }
+
+   .element-row7 span {
+     border: 1px solid gray;
+     padding: 2px;
+     font-size: 17px;
+     padding-inline-start: 129px;
+     border-radius: 2px;
+     box-shadow: 0px 0.4px 1px 0px black;
+     float: right;
+   }
+
+   .element-row8 {
+     margin-left: 6px;
+   }
+
+   .element-row8 label {
+     margin-left: 50px;
+   }
+
+   .element-row8 button {
+     background-color: darkkhaki;
+     padding: 0px;
+     font-size: 17px;
+     padding-inline: 17px;
+     border: 3px solid rgb(4, 145, 181);
+     font-family: 'Times New Roman', Times, serif;
+   }
+
+   .element-row8 span {
+     border: 1px solid gray;
+     padding: 2px;
+     font-size: 17px;
+     padding-inline-start: 129px;
+     border-radius: 2px;
+     box-shadow: 0px 0.4px 1px 0px black;
+     float: right;
+   }
+
+   .element-row9 {
+     margin-left: 6px;
+   }
+
+   .element-row9 button {
+     margin-left: 116px;
+     background-color: bisque;
+     border-radius: 4px;
+     border: 3px solid rgb(0, 0, 0);
+   }
+
+   .persent {
+     margin-left: 50px;
+     -webkit-text-stroke-width: 0.5px;
+
+   }
+
+   .element-row9 span {
+     border: 1px solid gray;
+     padding: 2px;
+     font-size: 17px;
+     padding-inline-start: 129px;
+     border-radius: 2px;
+     box-shadow: 0px 0.4px 1px 0px black;
+     float: right;
+   }
+
+   .element-row10 {
+     margin-left: 20px;
+   }
+
+   .element-row10 label {
+     -webkit-text-stroke-width: 0.7px;
+     margin-left: 100px;
+   }
+
+   .element-row10 span {
+     border: 1px solid white;
+     background-color: #000000;
+     color: rgb(29, 212, 19);
+     float: right;
+     font-size: 30px;
+     padding-inline-start: 200px;
+
+   }
+
+   @media (max-width: 600px) and (min-width:100px) {
+     .definepage {
+       width: 600px;
+     }
+
+     .item1 {
+       padding: 10px;
+       width: 100%;
+       display: flex;
+       height: auto;
+       padding-bottom: 20px;
+     }
+
+     .item1 a {
+       padding: 10px;
+       background-color: #14ebffbc;
+       text-align: center;
+       margin: 0px;
+       border-radius: 15px;
+       margin-inline-start: 42px;
+     }
+
+     .item1 a:hover {
+       background-color: rgba(255, 255, 255, 0.541);
+     }
+
+     .item2 {
+       display: flex;
+       flex-wrap: wrap;
+       height: auto;
+       width: 100%;
+     }
+
+     .detail a {
+       width: 60px;
+       font-size: 12px;
+     }
+
+     .detail {
+       display: flex;
+     }
+
+     .detail button {
+       background-color: #ffffff;
+       font-size: 12px;
+       margin-left:280px;
+     }
+
+     .define-3lastgroud {
+       height: 1000px;
+       display: grid;
+       grid-template-areas:
+         "first"
+         "second"
+         "third";
+       gap: 80px;
+     }
+
+     .item3 {
+       width: 100%;
+       height: auto;
+       display: flex;
+       flex-direction: row;
+     }
+
+     .ground1 {
+       flex-direction: column;
+       width: 50%;
+       display: flex;
+       flex-wrap: wrap;
+       font-size: 12px;
+
+     }
+      #informationcompany {
+       width: 200px;
+     }
+
+     #informationcompany option {
+       width: 200px;
+     }
+     .ground1 button{
+      width: 100%;
+      font-family: 'Times New Roman', Times, serif;
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 10px;
+      color: rgb(0, 0, 0);
+      font-size: 17px;
+     }
+     .customertype{
+      width: 100%;
+     }
+     .memberpoint{
+      font-size: 18px;
+     }
+     .normallct{
+      font-size: 18px;
+     }
+     .invoice {
+      display: inline;
+     }
+     #inputtext{
+      width: 100%;
+     }
+     #inputtext input{
+      width: 100%;
+      border: 1px solid green;
+     }
+     .blockcompany{
+      width: 100%;
+      margin-top: 30px;
+
+     }
+     .blockcompany label{
+      margin-left: 30%;
+     }
+     #informationcompany{
+      width: 100%;
+      margin: 0;
+      border: 1px solid rgb(255, 255, 255);
+      height: 35px;
+      border-radius: 10px;
+     }
+
+     .ground2 {
+       flex-direction: column;
+       border-left: 2px solid black;
+       width: 50%;
+       display: flex;
+       flex-wrap: wrap;
+       font-size: 12px;
+     }
+     .item4{
+      font-size: 12px;
+     }
+     #select2{
+      width: 100%;
+      border: 2px white;
+     }
+     .select3{
+      width: 100%;
+    }
+    .textcredit{
+      width: 100%;
+
+    }
+    .textcredit input{
+      width: 70%;
+    }
+    .groud input{
+    height: 30px;
+    width: 100px;
+    }
+    .listproduct label{
+      font-size: 10px;
+    }
+    .groud button{
+      height: 30px;
+            font-size: 7px;
+    }
+    .groud2 {
+      display: flex;
+    }
+    .groud2 input{
+      height: 30px;
+      width: 60px;
+
+    }
+    .groud2 button{
+      height: 30px;
+      font-size: 7px;
+      width: 50px;
+    }
+     .priecenumber {
+       height: 290px;
+       margin-top: 0px;
+       width: 100%;
+       border: none;
+       font-size: 25px;
+
+     }
+     .item5{
+      display: flex;
+     }
+     .all-btn button{
+      width: auto;
+      white-space: nowrap;
+      padding: 3px;
+     }
+     .setting{
+      margin: 0;
+     }
+     .price-product {
+      font-size: 20px;
+      margin: 0;
+
+     }
+     .priecenumber{
+      margin-top: -270px;
+     }
+
+     .last-price {
+       width: 100%;
+       margin-top: -420px;
+     }
+
+     .btninelement input {
+       width: 400px;
+     }
+
+     .item4 {
+       width: 100%;
+       border: 1px solid rgba(249, 38, 228, 0.582);
+       font-size: 12px;
+     }
+
+     .all-btn button {
+       font-size: 8px;
+     }
+
+     .item5 {
+       width: 100%;
+     }
+
+     .setting {
+       width: 100%;
+       font-size: 12px;
+     }
+   }

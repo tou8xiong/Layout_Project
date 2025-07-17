@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pratice make build good result</title>
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <script src="jvsp.js"></script>
+  <div class="contianer1">
+
+    <div class="item1">
+      <a href="#">file</a>
+      <a href="#">Data</a>
+      <a href="#">Sell</a>
+      <a href="#">Window</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="definepage">
+      <div class="item2">
+        <div class="detail" style="display: flexbox;">
+          <a href="#">Detail1</a><a href="#">Detail2</a><a href="#">Detail3</a>
+          <button>Information</button>
+        </div>
+      </div>
+      <div class="item3">
+        <div class="ground1">
+          <button style="background-color: rgba(255, 71, 71, 0.804);">ຂໍ້ມູນລູກຄ້າ</button>
+          <button>Customer</button>
+          <div class="customertype">
+            <div class="memberpoint">
+              <p>Member customer </p>
+              <div>
+                <p class="member">0,00 Point</p>
+              </div>
+            </div>
+            <div>
+              <p class="normallct"> Normal customer</p>
+            </div>
+          </div>
+          <div class="invoice">
+            <label>
+              Invoice
+              <input type="checkbox" checked style="margin-left: 60px;">
+              Auto</label>
+            <div id="inputtext"><input type="text" placeholder="TEXT"></div>
+          </div>
+          <label>Date and Date
+            <div id="clock"></div>
+          </label>
+          <script>
+            function updateClock() {
+              const now = new Date();
+              const date = now.toLocaleDateString();
+              const time = now.toLocaleTimeString();
+              document.getElementById('clock').innerHTML = date + ' ' + time;
+            }
+
+            setInterval(updateClock, 1000); // update every 1 second
+            updateClock(); // initial call
+          </script>
+          <div class="blockcompany">
+            <label>Company (ບໍລິສັດ)</label>
+            <div>
+              <select name="Use company information " id="informationcompany">
+                <option>Data from each store</option>
+                <option>Store1</option>
+                <option>Store1</option>
+                <option>Store1</option>
+                <option>Store1</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="ground2">
+          <div>
+            <label style="margin-left: 10px;">ພາສີ</label>
+            <div>
+              <select name="ພາສີ" id="select2">
+                <option>ຄິດພາສີ</option>
+                <option>5%</option>
+                <option>10%</option>
+                <option>10%</option>
+              </select>
+            </div>
+          </div>
+          <div class="vattype">
+            <label style="margin-left: 10px;">VAT (Type)</label>
+            <div>
+              <select name="vat" class="select3">
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label style="margin-left: 10px;">Credit</label>
+            <div class="textcredit">
+              <input type="text" placeholder="0">
+            </div>
+          </div>
+          <div class="pricetype">
+            <label style="margin-left: 10px;">Price type</label>
+            <div>
+              <select name="price" class="select4">
+                <option>ລາຄາຂາຍ1</option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="potype"><label style="margin-left: 10px;">PO (ເລກທີ່PO)</label>
+            <div class="inputPO"><input type="text" placeholder="ເລກທີ່"></div>
+          </div>
+          <div class="comment">
+            <label style="margin-left: 10px;">Comment(ໝາຍເຫດ)</label>
+            <div class="commentinput"><input type="text" placeholder="Text here"></div>
+          </div>
+          <div>
+            <label>ID</label>
+            <div class="idtext"><input type="text" placeholder="0"></div>
+          </div>
+          <div class="docdiv">
+            <label>DOC</label>
+            <div class="doctext"><input type="text" placeholder="0"></div>
+          </div>
+        </div>
+        <!--this is the div groud2-->
+      </div>
+      <div class="item4">
+        <div class="groud">
+          <div><label>(Product)ລາຍການສີນຄ້າ</label></div>
+          <p>[F2] Auto Input=></p><input type="text"><button>*[3]ຈຳນວນ</button>
+        </div>
+        <div class="groud2"><input type="number" placeholder="1.00">
+          <button>[F8]ສວ່ນຫຼຸດ</button><input type="number" placeholder="0,00%"
+            style="background-color: rgba(72, 195, 209, 0.601);">
+        </div>
+        <div class="listproduct"><label>0 ລາຍການ</label></div>
+
+
+      </div>
+      <div class="item5">
+        <div class="all-btn">
+          <button class="btn1">ລຳດັບ</button>
+          <button class="btn2">ID</button>
+          <button class="btn3">ລະຫັດສີນຄ້າ</button>
+          <button class="btn4" >ໜ່ວຍ</button>
+          <button class="btn5">ລາຄາກອ່ນຫຼຸດ</button>
+          <button class="btn6">ສ່ວນພິເສດ</button>
+          <button class="btn7">ສ່ວນຫຸດ %</button>
+          <button class="btn8">ລາຄາຫຼັງຫຼຸດ</button>
+          <button class="btn9">ຈຳນວນເງີນ</button>
+          <button calss="btn10">ໝາຍເຫດ</button>
+          <button class="btn11">ຈຳນວນເປັນທົດສະນິຍົມໄດ້</button>
+          <button class="btn12">Stock</button>
+          <button class="btn13">VAT</button>
+        </div>
+      </div>
+      <div class="define-3lastgroud">
+        <div class="setting">
+          <div class="setting-contianer">
+            <div class="first-groub">
+              <div class="addclass"><button>Add(ເພີ່ມລາຍການສີນຄ້າ)</button><button>Add (ບໍລິການ)</button></div>
+              <div class="deleteclass"><button>Delete</button><button
+                  style="background: rgba(255, 180, 180, 0.726);">History</button><input type="text"
+                  placeholder="0 Unit"><input type="text" placeholder="0 unit"></div>
+              <div class="symol"><button>+</button><button>-</button></div>
+            </div>
+            <div class="second-groub">
+              <div class="btninelement">
+                <button>Import</button>
+                <button>Add (Set)</button>
+                <button>add new set</button>
+                <button>Resfresh Stock</button>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="priecenumber">
+          <div id="price-product">
+            <p>SELL (ຂາຍ)</p>
+          </div>
+        </div>
+        <div class="last-price">
+          <div class="display-lastprice">
+            <div class="element-row1">
+              <label>F11</label>
+              <button>ຫຼຸດ Point</button><input type="number" placeholder="0.00">
+              <label>Point</label>
+              <span>0.00</span>
+            </div>
+            <div class="element-row2">
+             <button>ສ່ວນຫຼຸດ Promotion</button>
+             <span>0.00</span>
+            </div>
+            <div class="element-row3">
+              <label>ຈຳນວນເງີນ</label>
+              <span>0.00</span>
+            </div>
+            <div class="element-row4">
+              <label>F10</label>
+              <button>ສ່ວນຫຼຸດ Coupon</button>
+              <span>0.00</span>
+            </div>
+            <div class="element-row5">
+              <label>9)</label>
+              <button>ສ່ວນຫຼຸດ %</button>
+              <label class="label-special">0.00%</label>
+              <span>0.00</span>
+            </div>
+            <div class="element-row6">
+              <label>0)</label>
+              <button>ສ່ວນຫຼຸດເງີນສົດ</button>
+              <span>0.00</span>
+            </div>
+            <div class="element-row7">
+              <label>Service Change</label>
+              <span>0.00</span>
+            </div>
+            <div class="element-row8">
+              <label>ລວມເປັນເງີນ</label>
+              <button>Detail</button>
+              <span>0.00</span>
+            </div>
+            <div class="element-row9">
+              <label>Z) VAT</label>
+              <button>10.00</button>
+              <label  class="persent">%</label>
+              <span>0.00</span>
+            </div>
+            <div class="element-row10">
+              <label>ລວມທັງໝົດ</label>
+              <span>0.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
